@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+html::webkit-screlbar-track{
+	background: transparent;
+}
+html::webkit-screlbar-thumb{
+	background: #39A5A0;
+	border-radius: 10px;
+}
+html::webkit-screlbar{
+	width: 10px;
+}
+body{
+	background: white;
+}
+
+/* Header design*/
+.header{
+	background: white;
+	width: 100%;
+	box-shadow: 0px 1px 1px black;
+}
+
+.header nav{
+	position: relative;
+	display: flex;
+	max-width: cal(100% - 200px);
+	margin: auto;
+	height: 70px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav.content{
+	display: flex;
+	align-items: center
+}
+
+nav.content .link{
+	margin-left: 80px;
+	display: flex;
+}
+
+/* Header design stop */
