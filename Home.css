@@ -57,5 +57,9 @@ nav .content .links li {
 nav .content .logo a img {
     width: 75px;
 }
- 
+
+nav .content .links li{
+	list-style: none;
+	line-height: 70px;
+}
 /* Header design stop */
