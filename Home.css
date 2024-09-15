@@ -62,4 +62,54 @@ nav .content .links li{
 	list-style: none;
 	line-height: 70px;
 }
+
+#First{
+	color: #388B6F;
+}
+
+.content .links li a,
+.content .links li label{
+	color: black;
+	font-size: 18px;
+	padding: 9px 17px;
+	font-weight: bold;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.content .links li label{
+	display: none;
+}
+
+.content .links li a:hover,
+.content .links li label:hover{
+	color: red;
+}
+
+.header .search-icon,
+.header .menu-icon{
+	color: #39D0BB;
+	font-size: 18px;
+	line-height: 70px;
+	width: 70px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.header .menu-icon{
+	display: none;
+}
+
+.header #show-search:checked ~ .search-icon i::before{
+	content: "\f00d";
+}
+
+.header .search-box{
+	position: absolute;
+	width: 100%;
+	max-width: calc(100% - 50px);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
 /* Header design stop */
