@@ -23,30 +23,39 @@ body{
 }
 
 /* Header design*/
-.header{
-	background: white;
-	width: 100%;
-	box-shadow: 0px 1px 1px black;
+.header {
+    background: white;
+    width: 100%;
+    box-shadow: 0px 1px 1px black;
+    border-top: 2px solid #39A5A0; /* Add a horizontal line at the top */
 }
 
-.header nav{
-	position: relative;
-	display: flex;
-	max-width: cal(100% - 200px);
-	margin: auto;
-	height: 70px;
-	align-items: center;
-	justify-content: space-between;
+.header nav {
+    position: relative;
+    display: flex;
+    max-width: calc(100% - 200px);
+    margin: auto;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav.content{
-	display: flex;
-	align-items: center
+nav .content {
+    display: flex;
+    align-items: center;
 }
 
-nav.content .link{
-	margin-left: 80px;
-	display: flex;
+nav .content .links {
+    margin-left: 80px;
+    display: flex;
 }
 
+nav .content .links li {
+    margin-left: 10px; /* Adds spacing between each link */
+}
+
+nav .content .logo a img {
+    width: 75px;
+}
+ 
 /* Header design stop */
