@@ -141,6 +141,8 @@ nav .content .links li{
 	line-height: 60px;
 	width: 70px;
 	background: #388b6f;
+	border: none;
+	outline: none;
 	color: white;
 	font-size: 20px;
 	cursor: pointer;
