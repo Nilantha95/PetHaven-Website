@@ -151,4 +151,63 @@ nav .content .links li{
 .header input[type ="checkbox"]{
 	display: none;
 }
+
+/* Responsive */
+@media screen and (max-width:1250px){
+	.header nav{
+		max-width: 100%;
+		padding: 0px 20px;
+	}
+	nav .content .links{
+		margin-left: 30px;
+	}
+	.content .links a{
+		padding: 8px 13px;
+	}
+	.header .search-box{
+		max-width: calc(100% -100px);
+	}
+	.header .search-box input{
+		padding: 0px 100px 0px 15px;
+	}
+}
+@media screen and (max-width:900px){
+	.header .menu-icon{
+		display: block;
+	}
+	.header #show-menu:checked ~ .menu-icon i::before{
+		content: "\f00d";
+	}
+	nav .content .links{
+		display: block;
+		position: fixed;
+		background: white;
+		height: 100%;
+		width: 100%;
+		top: 70px;
+		left: -100%;
+		margin-left: 0;
+		max-width: 350px;
+		overflow: auto;
+		padding-bottom: 100px;
+		overflow: auto;
+		padding-bottom: 100px;
+		transition: all 0.3s ease;
+	}
+	nav #show-menu:checked ~.content .links{
+		left: 0%;
+	}
+	.content .links li {
+		margin: 15px 20px;
+	}
+	
+	.content .links li a,
+	.content .links li label{
+		line-height: 40px;
+		font-size: 20px;
+		display: block;
+		padding: 8px 18px;
+		cursor: pointer;
+	}
+}
 /* Header design stop */
