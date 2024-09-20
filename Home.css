@@ -264,5 +264,24 @@ nav .content .links li{
     margin-top: 10px;
 }
 
+#btn{
+	width: 200px;
+	height: 36px;
+	font-weight: bold;
+	background: white;
+	color: #388b6f;
+	letter-spacing: 1px;
+	border: 2px solid #388b6f;
+	border-radius: 5px;
+	margin-top: 10px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+#btn:hover{
+	background-color: #388b6f;
+	color: white;
+}
+
 
 /* Home design End */
