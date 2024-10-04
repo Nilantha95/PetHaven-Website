@@ -253,15 +253,49 @@ nav .content .links li{
 }
 
 .main-text h1 {
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
     text-shadow: 0px 0px 1px black;
+    overflow: hidden; /* Hide the overflow during typing */
+    margin: 0 auto;
+    letter-spacing: .15em; /* Adjust spacing between letters */
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInText 1s ease-in-out forwards;
+    display: inline-block; /* Allow the animation to handle multi-line */
+}
+
+/* Typing animation for each line */
+.main-text h1 span {
+    display: inline-block;
+    white-space: nowrap; /* This keeps each line on one line */
+    overflow: hidden; /* Hide overflow for typing effect */
+    border-right: none; /* No caret needed */
+    animation: typing 3.5s steps(30, end) forwards;
 }
 
 .main-text p {
     font-size: 20px;
     color: white;
     margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 5s ease-in-out forwards 3.5s;
+}
+
+@keyframes typing {
+    from { width: 0; opacity: 1; } /* Start typing with full opacity */
+    to { width: 100%; opacity: 1; } /* Keep opacity constant */
+}
+
+/* Fade-in animation for the paragraph */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Fade-in effect for the h1 text */
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 #btn{
