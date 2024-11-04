@@ -317,3 +317,28 @@ nav .content .links li{
 	color: white;
 }
 /* Home design End */
+
+
+
+.offers-container {
+	display: flex;
+	justify-content: space-around;
+	gap: 1rem;
+	padding: 20px 8%;
+	background: #f3f3f3;
+}
+
+.offers-content {
+	text-align: center;
+	border-radius: 10px;
+	padding: 20px;
+	background: #ffffff;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offers-content .row i {
+	font-size: 50px;
+	color: #388b6f;
+	margin-bottom: 10px;
+}
+/* Top Section Card End */
