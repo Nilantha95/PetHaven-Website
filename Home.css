@@ -191,8 +191,6 @@ nav .content .links li{
 		max-width: 350px;
 		overflow: auto;
 		padding-bottom: 100px;
-		overflow: auto;
-		padding-bottom: 100px;
 		transition: all 0.3s ease;
 	}
 	nav #show-menu:checked ~.content .links{
@@ -374,7 +372,67 @@ nav .content .links li{
     color: #388b6f; 
 }
 
-
-
-
 /* Top Section Card End */
+
+/* About Us Section */
+.about-us-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+}
+
+.about-us-section:hover {
+    transform: translateY(-5px);
+}
+
+.about-us-image {
+    flex: 0 0 45%; /* Ensures the image takes less width */
+    margin-right: -15px; /* Moves the image slightly to the right */
+}
+
+.about-us-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.about-us-content {
+    flex: 1;
+    padding-left: 5px;
+	margin-left: 0px;
+}
+
+.about-us-content h2 {
+    font-size: 1.8rem;
+    color: #00796b;
+    margin-bottom: 8px;
+}
+
+.about-us-content p {
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    color: #00796b;
+    border: 2px solid #00796b;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #00796b;
+    color: #fff;
+}
