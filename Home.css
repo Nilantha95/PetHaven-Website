@@ -436,3 +436,70 @@ nav .content .links li{
     background-color: #00796b;
     color: #fff;
 }
+
+
+/* CSS added to Home page product */
+
+.product-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-section h2 {
+    font-size: 2em;
+    color: #2d4b38;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    color: #2d4b38;
+    margin: 15px 0;
+}
+
+.product-card p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #2d4b38;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #2d4b38;
+    border: 2px solid #2d4b38;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #2d4b38;
+    color: #fff;
+}
