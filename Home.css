@@ -516,7 +516,6 @@ button:hover {
     padding: 20px;
     background: #fff;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     transition: transform 0.2s ease;
 }
