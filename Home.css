@@ -453,7 +453,7 @@ nav .content .links li{
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
 
@@ -502,4 +502,90 @@ button {
 button:hover {
     background-color: #2d4b38;
     color: #fff;
+}
+
+/* contact form */
+
+/* Centering the entire .product-container */
+
+
+.product-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    color: #00695c;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #00695c;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00695c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #004d40;
 }
