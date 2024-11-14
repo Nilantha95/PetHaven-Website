@@ -229,18 +229,18 @@ nav .content .links li{
 .product-section {
     text-align: center;
     padding: 20px;
-}
-
-.product-section h2 {
-    font-size: 2em;
-    color: #2d4b38;
-    margin-bottom: 20px;
+	margin-top: auto;
+    background-color: #f9f9f9;  /* Optional: to give some background color to the section */
+    border: 2px solid #ddd;  /* Add border around the entire section */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Add shadow around the entire section */
+    border-radius: 8px;  /* Optional: Add rounded corners to the entire section */
 }
 
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
+    margin-top: 20px;   /* Adds space above the grid */
 }
 
 .product-card {
@@ -249,8 +249,9 @@ nav .content .links li{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    border: 1px solid #ddd; /* Border around each product card */
+    margin-bottom: 20x; /* Space between each product card */
 }
-
 .product-card img {
     width: 100%;
     height: auto;
