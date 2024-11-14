@@ -252,6 +252,7 @@ nav .content .links li{
     border: 1px solid #ddd; /* Border around each product card */
     margin-bottom: 20x; /* Space between each product card */
 }
+
 .product-card img {
     width: 100%;
     height: auto;
