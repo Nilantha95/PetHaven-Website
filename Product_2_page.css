@@ -29,7 +29,6 @@ body{
 }
 
 
-
 /* Header design*/
 .header {
     background: white;
@@ -314,6 +313,50 @@ nav .content .links li{
     font-size: 1.2em;
     cursor: pointer;
 }
+
+/* Product Description Form Started */
+
+/* Product Description Styles */
+.product-description {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.product-description h2 {
+    font-size: 1.6em;
+    color: #39A5A0;
+    margin-bottom: 10px;
+}
+
+.product-description p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.product-description h3 {
+    font-size: 1.4em;
+    color: #388B6F;
+    margin-top: 20px;
+}
+
+.product-description ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.product-description li {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
 
 /* Footer Styling */
 .footer {
