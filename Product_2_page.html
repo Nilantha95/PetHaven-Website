@@ -6,11 +6,11 @@
 	
 	<!-- Style link -->
 	<link rel="stylesheet" href="Product_2_page.css">
-<!-- Style link -->
+    <!-- Style link -->
 	
-<!-- Font style -->
+    <!-- Font style -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-<!-- Font style -->
+    <!-- Font style -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 	
 </head>
@@ -27,16 +27,24 @@
 			<div class="logo"><a href="Home.html"><img src="Image/Screenshot 2024-11-13 195220.png" alt="logo_pic"></a></div>
 				
 				<ul class="links">
-					<li><a href="#" id="First">Home</a></li>
-					<li><a href="AboutUs.html">About Us</a></li>
-					<li><a href="Main Product page.html">Product</a></li>
-					<li><a href="contact_Us.html">Contact</a></li>
-				</ul>
+                       <li><a href="#" id="First">Home</a></li>
+                       <li><a href="AboutUs.html">About Us</a></li>
+                       <li><a href="Main Product page.html">Product</a></li>
+                       <li><a href="contact_Us.html">Contact</a></li>
+                         <!-- New Account Link with Dropdown -->
+                         <li class="dropdown">
+                           <a href="#" class="dropbtn">Account <i class="fa-solid fa-caret-down"></i></a>
+                      <div class="dropdown-content">
+                           <a href="profile.html">Profile</a>
+                           <a href="signin.html">Sign In</a>
+                     </div>
+                </li>
+            </ul>
 			</div>
-			<label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-			<form action="#" class="search-box">
-			   <input type="text" placeholder="Search" required>
-			   <button type="submit" class="go-icon"><i class ="fas fa-long-arrow-alt-right"></i></button>
+			      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+			      <form action="#" class="search-box">
+			      <input type="text" placeholder="Search" required>
+			      <button type="submit" class="go-icon"><i class ="fas fa-long-arrow-alt-right"></i></button>
 			</form>
 		
 		</nav>
@@ -46,53 +54,54 @@
 	
 	
 	
-<div class="product-container">
-    <!-- Thumbnail Image Section -->
-    <div class="product-thumbnail">
-        <img src="https://via.placeholder.com/150" alt="Product Thumbnail">
-    </div>
-
-    <!-- Main Image and Info Section -->
-    <div class="main-content">
-        <!-- Main Product Image -->
-        <div class="product-main-image">
-            <img src="https://via.placeholder.com/300" alt="Product Main Image">
+<!-- Product Section with Background Color -->
+<div class="product-section">
+    <!-- Product Container -->
+    <div class="product-container">
+        <!-- Thumbnail Image Section -->
+        <div class="product-thumbnail">
+            <img src="https://via.placeholder.com/150" alt="Product Thumbnail">
         </div>
 
-        <!-- Product Information -->
-        <div class="product-info">
-            <h1>Keells Dishwash Bar 100g</h1>
-            <p>Keells #111083</p>
-            <h2>Rs 63.00</h2>
-            <button class="add-to-cart">🛒 Add to Cart</button>
-            <div class="product-tags">
-                <span>Household</span>, <span>Cleaning Consumables</span>, <span>Dish Wash</span>
+        <!-- Main Image and Info Section -->
+        <div class="main-content">
+            <!-- Main Product Image -->
+            <div class="product-main-image">
+                <img src="https://via.placeholder.com/300" alt="Product Main Image">
             </div>
-            <div class="product-share">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-solid fa-link"></i>
+
+            <!-- Product Information -->
+            <div class="product-info">
+                <h1>Keells Dishwash Bar 100g</h1>
+                <p>Keells #111083</p>
+                <h2>Rs 63.00</h2>
+                <button class="add-to-cart">🛒 Add to Cart</button>
+                <div class="product-tags">
+                    <span>Household</span>, <span>Cleaning Consumables</span>, <span>Dish Wash</span>
+                </div>
+                <div class="product-share">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-link"></i>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Product Detail Form End -->
-
-<!-- Product Description Form Started -->
-
-<div class="product-description">
-    <h2>Product Description</h2>
-    <p>
-        Happy Cat Meat in Sauce Culinary Springwater Trout is a delectable wet food for cats who love the taste of fish. It provides all the necessary nutrients and moisture for a healthy balance and good kidney function. The food is made with a high meat ratio and is easy to digest, suitable for both male and female neutered and sterilised cats.
-    </p>
-    <h3>Benefits:</h3>
-    <ul>
-        <li>All-natural ingredients</li>
-        <li>Nutritionally proven</li>
-        <li>Ideal for male and female neutered and sterilised cats</li>
-        <li>Promotes a naturally glossy coat</li>
-    </ul>
+    <!-- Product Description Section -->
+    <div class="product-description">
+        <h2>Product Description</h2>
+        <p>
+            Happy Cat Meat in Sauce Culinary Springwater Trout is a delectable wet food for cats who love the taste of fish. It provides all the necessary nutrients and moisture for a healthy balance and good kidney function. The food is made with a high meat ratio and is easy to digest, suitable for both male and female neutered and sterilised cats.
+        </p>
+        <h3>Benefits:</h3>
+        <ul>
+            <li>All-natural ingredients</li>
+            <li>Nutritionally proven</li>
+            <li>Ideal for male and female neutered and sterilised cats</li>
+            <li>Promotes a naturally glossy coat</li>
+        </ul>
+    </div>
 </div>
 
 <!-- Product Description Form End -->
