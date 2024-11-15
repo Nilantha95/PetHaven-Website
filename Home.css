@@ -72,6 +72,49 @@ nav .content .links li{
 	line-height: 70px;
 }
 
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1000; /* Increase z-index of the dropdown */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Align directly below the button */
+    left: 0;
+    background-color: #fff;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Higher z-index to ensure it's above other content */
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-content {
+    pointer-events: auto; /* Ensure dropdown content can be interacted with */
+}
+
+/* dropdown end */
+
 #First{
 	color: #388B6F;
 }

@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
 *{
 	margin: 0;
 	padding: 0;
@@ -21,6 +20,14 @@ html::webkit-screlbar{
 body{
 	background: white;
 }
+
+.logo img {
+    width: 400px; /* Set the width you desire for the logo */
+    max-width: 100%; /* Optional: Ensures logo does not exceed container */
+    height: auto;
+    border-radius: 15px;
+}
+
 
 /* Header design*/
 .header {
@@ -62,6 +69,55 @@ nav .content .links li{
 	list-style: none;
 	line-height: 70px;
 }
+
+/* Dropdown Menu Styles start */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    color: black;
+    font-size: 18px;
+    padding: 9px 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropdown .dropbtn:hover {
+    color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* dropdown end */
 
 #First{
 	color: #388B6F;
@@ -213,90 +269,189 @@ nav .content .links li{
 		display: none;
 	}
 }
+/* Header design stop */
 
-/* Product form css */
 
+/* Product Form CSS */
+
+/* Container Styles */
 .product-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     gap: 20px;
+	margin-bottom: 50px;
+    max-width: 900px;
+    margin: 0 auto;
     padding: 20px;
-    width: 90%; /* Reduce width to avoid touching the outer area */
-    max-width: 1200px; /* Set a maximum width for better control */
-    margin: 20px auto; /* Center the container and add spacing from the top */
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+	margin-top: 10px;
 }
 
-.product-image {
-    flex: 0 0 150px; /* Set a fixed width */
-    border: 1px solid #a1e0a1;
+/* Thumbnail Image */
+.product-thumbnail {
+    flex: 0 0 150px;
+    border: 1px solid #d0e4c1;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Main Image */
+.product-main-image {
+    flex: 0 0 300px;
+    border: 1px solid #d0e4c1;
+    border-radius: 8px;
     padding: 10px;
-    border-radius: 4px;
 }
 
-.product-image img {
-  width: 100%;
-  display: block;
+/* Product Info */
+.product-info {
+    flex: 1;
+    max-width: 300px;
 }
 
-.product-details {
-  text-align: center;
+/* Product Info Styles */
+.product-info h1 {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.product-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 0 10px;
-}
-
-.product-id {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.product-price {
-  color: #47c147;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 0 10px;
+.product-info h2 {
+    color: #28a745;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
 .add-to-cart {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #e0e0e0;
-  color: #333;
-  border-radius: 4px;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 10px;
-  text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-.tags {
-  margin-top: 10px;
-  font-size: 14px;
+.product-tags {
+    margin-top: 15px;
 }
 
-.tags span {
-  color: #47c147;
-  margin-right: 10px;
-  cursor: pointer;
+.product-tags span {
+    color: #28a745;
+    font-weight: bold;
 }
 
-.share-icons {
-  margin-top: 10px;
+.product-share {
+    margin-top: 10px;
 }
 
-.share-icons i {
-  margin-right: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  color: #666;
+.product-share i {
+    margin-right: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Product Description Form Started */
+
+/* Product Description Styles */
+.product-description {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.product-description h2 {
+    font-size: 1.6em;
+    color: #39A5A0;
+    margin-bottom: 10px;
+}
+
+.product-description p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.product-description h3 {
+    font-size: 1.4em;
+    color: #388B6F;
+    margin-top: 20px;
+}
+
+.product-description ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.product-description li {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Product Section Background */
+.product-section {
+    padding: 40px 20px;
+    background-color: #B7CFC9; /* Light gray background color */
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Optional: Add a border radius for a softer look */
+.product-section {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #C3E9E7;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer .payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .payment-methods i {
+    font-size: 24px;
+    color: black;
+    transition: transform 0.2s ease;
+}
+
+.footer .payment-methods i:hover {
+    transform: scale(1.1);
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
