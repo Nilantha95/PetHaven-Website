@@ -309,16 +309,6 @@ nav .content .links li{
     margin-top: 10px;
 }
 
-.product-thumbnail {
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.product-thumbnail:hover {
-    transform: scale(1.1);
-}
-
-
 .product-share i {
     margin-right: 10px;
     font-size: 1.2em;
@@ -360,6 +350,3 @@ nav .content .links li{
 .footer a:hover {
     text-decoration: underline;
 }
-
-
-
