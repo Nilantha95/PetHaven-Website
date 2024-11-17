@@ -4,9 +4,50 @@
 <meta charset="utf-8">
 <title>Cartsection</title>
 	<link rel="stylesheet" href="Cart_section.css">
+	<!-- Font style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<!-- Font style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 <body>
+	
+	<!-- nav bar added -->
+	<div class="header">
+		<nav>
+			<input type="checkbox" id="show-search">
+			<input type="checkbox" id="show-menu">
+			<label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+			<div class="content">
+			<div class="logo"><a href="Homepage.html"><img src="Image/Screenshot 2024-11-13 195220.png" alt="logo_pic"></a></div>
+				
+				<ul class="links">
+                       <li><a href="Homepage.html" id="First">Home</a></li>
+                       <li><a href="AboutUs.html">About Us</a></li>
+                       <li><a href="Main Product page.html">Product</a></li>
+					   <li><a href="Cart_section.html">Cart</a></li>
+                       <li><a href="contact_Us.html">Contact</a></li>
+                         <!-- New Account Link with Dropdown -->
+                         <li class="dropdown">
+                           <a href="#" class="dropbtn">Account <i class="fa-solid fa-caret-down"></i></a>
+                      <div class="dropdown-content">
+                           <a href="profile.html">Profile</a>
+                           <a href="signin.html">Sign In</a>
+                     </div>
+                </li>
+            </ul>
+			</div>
+			<label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+			<form action="#" class="search-box">
+			   <input type="text" placeholder="Search" required>
+			   <button type="submit" class="go-icon"><i class ="fas fa-long-arrow-alt-right"></i></button>
+			</form>
+		
+		</nav>
+	
+	</div>
+<!-- Navbar end -->
 <!-- Cart Page -->
 <div class="cart-container">
     <h2>Shopping Cart</h2>
@@ -29,5 +70,21 @@
     </div>
 </div>
 	<script src="Cart_section.js" ></script>
+
+	<!-- Footer stared -->
+<footer class="footer">
+    <div class="payment-methods">
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-solid fa-truck-fast"></i> <!-- Cash on Delivery -->
+        <i class="fa-brands fa-cc-amex"></i>
+        <i class="fa-solid fa-building-columns"></i> <!-- Bank Transfer -->
+        <i class="fa-solid fa-hand-holding-usd"></i> <!-- Cash on Pickup -->
+    </div>
+    <p>Copyright 2024 &copy; <a href="#">Pet Heaven.lk</a></p>
+</footer>
+
+
+<!-- Footer Ended -->
 </body>
 </html>
