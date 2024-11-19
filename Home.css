@@ -621,6 +621,7 @@ button:hover {
 .contact-form textarea {
     height: 100px;
     resize: vertical;
+	font-size: 18px;
 }
 
 .contact-form button {
