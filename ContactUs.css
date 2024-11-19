@@ -351,6 +351,7 @@ input, textarea {
 textarea {
     height: 100px;
     resize: none;
+	font-size: 16px;
 }
 
 .submit-btn {
