@@ -23,8 +23,8 @@ body{
 }
 
 .logo img {
-    width: 400px; /* Set the width you desire for the logo */
-    max-width: 100%; /* Optional: Ensures logo does not exceed container */
+    width: 400px; 
+    max-width: 100%; 
     height: auto;
     border-radius: 15px;
 }
@@ -94,6 +94,12 @@ nav .content .links li{
 .dropdown:hover .dropdown-content,
 .dropdown:focus-within .dropdown-content {
     display: block;
+}
+
+/* Hide dropdown content and button when search is active */
+#show-search:checked ~ nav .content .dropdown-content,
+#show-search:checked ~ nav .content .dropbtn {
+    display: none;
 }
 
 .dropdown-content a {
@@ -265,6 +271,7 @@ nav .content .links li{
 		display: none;
 	}
 }
+
 /* Header design stop */
 
 
