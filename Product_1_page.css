@@ -23,7 +23,7 @@ body{
 
 .logo img {
     width: 400px; /* Set the width you desire for the logo */
-    max-width: 100%; /* Optional: Ensures logo does not exceed container */
+    max-width: 100%; 
     height: auto;
     border-radius: 15px;
 }
@@ -337,7 +337,7 @@ nav .content .links li{
 .add-to-cart {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #f0f0f0;
+    background-color: #FFFFFF;
     border-radius: 5px;
     border: 1px solid #ccc;
     cursor: pointer;

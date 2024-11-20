@@ -552,7 +552,7 @@ button {
     font-size: 1em;
     color: #2d4b38;
     border: 2px solid #2d4b38;
-    background-color: transparent;
+    background-color: white;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
