@@ -1,17 +1,8 @@
-// JavaScript Document
-document.addEventListener("DOMContentLoaded", function() {
-    const paragraph = document.querySelector('.main-text p');
-    const text = paragraph.textContent;
-    paragraph.textContent = "";
-    let index = 0;
-
-    function typeText() {
-        if (index < text.length) {
-            paragraph.textContent += text.charAt(index);
-            index++;
-            setTimeout(typeText, 50); // Adjust the speed (in milliseconds) here
-        }
+document.getElementById('show-search').addEventListener('change', function () {
+    const dropdownContent = document.querySelector('.dropdown-content');
+    if (this.checked) {
+        dropdownContent.style.display = 'none';
+    } else {
+        dropdownContent.style.display = 'block';
     }
-
-    setTimeout(typeText, 4000); // Start typing the paragraph after the header animation
 });

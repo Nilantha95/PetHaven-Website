@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
 *{
 	margin: 0;
 	padding: 0;
@@ -23,11 +22,12 @@ body{
 }
 
 .logo img {
-    width: 400px; 
-    max-width: 100%; 
+    width: 400px; /* Set the width you desire for the logo */
+    max-width: 100%; /* Optional: Ensures logo does not exceed container */
     height: auto;
     border-radius: 15px;
 }
+
 
 /* Header design*/
 .header {
@@ -35,6 +35,8 @@ body{
     width: 100%;
     box-shadow: 0px 1px 1px black;
     border-top: 2px solid #39A5A0; /* Add a horizontal line at the top */
+	position: relative; /* Add this if not already present */
+    z-index: 10;
 }
 
 .header nav {
@@ -70,34 +72,34 @@ nav .content .links li{
 	line-height: 70px;
 }
 
-/* Dropdown Menu Styles */
+/* Dropdown Menu Styles start */
 .dropdown {
     position: relative;
     display: inline-block;
-    z-index: 1000; /* Increase z-index of the dropdown */
+}
+
+.dropdown .dropbtn {
+    color: black;
+    font-size: 18px;
+    padding: 9px 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropdown .dropbtn:hover {
+    color: red;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%; /* Align directly below the button */
-    left: 0;
     background-color: #fff;
     min-width: 150px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1001; /* Higher z-index to ensure it's above other content */
+    z-index: 999; /* Increase the z-index to ensure it appears above other elements */
     border-radius: 8px;
-}
-
-.dropdown:hover .dropdown-content,
-.dropdown:focus-within .dropdown-content {
-    display: block;
-}
-
-/* Hide dropdown content and button when search is active */
-#show-search:checked ~ nav .content .dropdown-content,
-#show-search:checked ~ nav .content .dropbtn {
-    display: none;
 }
 
 .dropdown-content a {
@@ -113,8 +115,8 @@ nav .content .links li{
     background-color: #f0f0f0;
 }
 
-.dropdown-content {
-    pointer-events: auto; /* Ensure dropdown content can be interacted with */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* dropdown end */
@@ -168,6 +170,7 @@ nav .content .links li{
 	opacity: 0;
 	pointer-events: none;
 	transition: all 0.3s ease;
+	z-index: 5;
 }
 
 .header #show-search:checked ~ .search-box{
@@ -268,11 +271,12 @@ nav .content .links li{
 	.content .links li a.destop.link{
 		display: none;
 	}
+	.dropdown-content {
+        position: relative; /* Prevent unintended positioning in smaller viewports */
+        z-index: 999;
+    }
 }
-
 /* Header design stop */
-
-
 
 
 /* Home design start */
