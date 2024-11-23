@@ -37,6 +37,7 @@ body{
     border-top: 2px solid #39A5A0; /* Add a horizontal line at the top */
 	position: relative; /* Add this if not already present */
     z-index: 10;
+	margin-bottom: 10px;
 }
 
 .header nav {
